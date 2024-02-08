@@ -48,7 +48,6 @@
 #         print(A) #2025
 
 
-
 # for A in range(1, 1000):
 #     for x in range(1, 1000):
 #         if ((x & 79 != 0) <= ((x & 64 == 0) <= (x & A != 0))) == False:
@@ -136,7 +135,7 @@
 #         print(A) #1
 
 
-#3 способ
+# 3 способ
 # for A in range(1, 1000):
 #     if all([((y + 7*x != 36) or (A > x -2)) or (A < y + 27) for x in range(1, 1000) for y in range(1, 1000)]) == True:
 #         print(A) #1
@@ -162,11 +161,7 @@
 #             print(A) #140
 
 
-
-
 # ДЗ
-
-
 
 
 # def Del(n, m):
@@ -304,3 +299,39 @@
 # 1 0 1
 # 1 1 0
 # zyx
+
+
+# ДОП
+
+
+# for A in range(1, 1000):
+#     for x in range(1, 1000):
+#         for y in range(1, 1000):
+#             if ((A < y) or (A < x) or (x + y <= 150)) == False:
+#                 break
+#         if ((A < y) or (A < x) or (x + y <= 150)) == False:
+#             break
+#     else:
+#         print(A)
+
+
+# def Del(n, m):
+#     return n % m == 0
+
+
+# p = list(range(27, 131))
+# q = list(range(50, 63))
+# p = list(range(38, 95))
+# a = []
+# for x in range(1, 1000):
+#     if ((x in p) and (x not in q) and (Del(x, 3) <= Del(x, 2))) == False:
+#         a.append(x)
+# print(a)
+
+
+for a in range(1, 10000):
+    for x in range(1, 1000):
+        if ((((x & 15 == 0) <= (x & 20 != 0)) <= ((x & 25 == 0) <= (x & 30 != 0))) and (x & a != 0)) == False:
+            break
+    else:
+        print(a)  # 1023

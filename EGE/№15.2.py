@@ -64,7 +64,6 @@
 # # [19 26] и [54 74]  [19, 74]
 
 
-
 # r = list(range(16, 35))
 # p = list(range(19, 27))
 # q = list(range(4, 18))
@@ -102,7 +101,6 @@
 #     if (((x0 in A) <= (x0 in p)) or (x0 in q)) == False:
 #         A.remove(x0)
 # print(A) #25
-
 
 
 # def Del(n, m):
@@ -145,7 +143,6 @@
 #     if ((x in p) <= (((x in q) and (x in p)) or ((not(x in q)) <= (x in A)))) == False:
 #         A.append(x)
 # print(A) #84 #разрыв не влияет, потому что все эти числа должны войти
-
 
 
 # ДЗ
