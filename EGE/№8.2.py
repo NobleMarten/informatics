@@ -116,7 +116,9 @@
 # print(cnt)
 
 
-# ДЗ
+
+#ДЗ
+
 
 
 # from itertools import *
@@ -183,24 +185,17 @@
 # print(cnt)
 
 
-# from itertools import *
-# cnt = 0
-# for i in permutations('0123456789AB', r=9):
-#     if i[0] != '0':
-#         s = ''.join(i)
-#         s = s.replace('0', '*')
-#         s = s.replace('2', '*')
-#         s = s.replace('4', '*')
-#         s = s.replace('6', '*')
-#         s = s.replace('8', '*')
-#         s = s.replace('A', '*')
-#         if s.count('*') == 5 and int(''.join(i), 12) % 2 != 0:
-#             cnt += 1
-# print(cnt)
-
-for A in range(1, 1000):
-    for x in range(1, 1000):
-        if ((x & A != 0) <= (((x & 16 != 0) or (x & 30 == 0)) <= (x & 55 != 0))) == False:
-            break
-    else:
-        print(A)
+from itertools import *
+cnt = 0
+for i in permutations('0123456789AB', r=9):
+    if i[0] != '0':
+        s = ''.join(i)
+        s = s.replace('0', '*')
+        s = s.replace('2', '*')
+        s = s.replace('4', '*')
+        s = s.replace('6', '*')
+        s = s.replace('8', '*')
+        s = s.replace('A', '*')
+        if s.count('*') == 5 and int(''.join(i), 12) % 2 != 0:
+            cnt += 1
+print(cnt)
