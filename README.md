@@ -1,1 +1,1 @@
-В этом репозитории представлены разные задания из ЕГЭ по информатике и решения к ним(код)
+This repository contains various tasks from the EGE in computer science and solutions to them (code)
